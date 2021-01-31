@@ -1,1 +1,5 @@
-# discord-botHSR
+# Discordのボットを作る
+
+HSR
+
+ROSノード
