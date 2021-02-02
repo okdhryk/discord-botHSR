@@ -1,7 +1,7 @@
 {
   "discord": {
       "user_id": "U60MV8D5W",
-      "api_token": "----Change your TOKEN aaaaaaaa----",
+      "api_token": "----Change your TOKEN ",
       "default_status_emoji": ":ghost:",
       "default_status_message": "I'm a ghost."
 },
