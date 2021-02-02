@@ -1,14 +1,14 @@
 {
   "discord": {
       "user_id": "U60MV8D5W",
-      "api_token": "ODA0OTE3NDQyMDQ0MTAwNjQ4.YBTTyA.R3WXC7UIH5OxpKT_CTrPXDAR8C0",
+      "api_token": "自分のTokenを入力する",
       "default_status_emoji": ":ghost:",
       "default_status_message": "I'm a ghost."
 },
  
  "slack": {
       "user_id": "U60MV8D5W",
-      "api_token": "xoxp-206166884791-204743285200-1692443556437-90db7ba364c9231d9d75aec8f9ddbdad",
+      "api_token": "自分のTokenを入力する",
       "default_status_emoji": ":ghost:",
       "default_status_message": "I'm a ghost."
     }
