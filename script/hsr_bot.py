@@ -34,6 +34,10 @@ class Greet(commands.Cog, name='あいさつ'):
             super().__init__()
             self.bot = bot
 
+        @commands.command(name="ねこ")
+        async def cat(self, ctx):
+            await ctx.send('にゃーん', file=discord.File('cat.jpg'))
+
         @commands.command(name="こんにちは")
         async def hello(self, ctx):
         #出会いのあいさつをする
