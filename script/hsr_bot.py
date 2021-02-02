@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+import argparse
+import json
+import os
+import urllib.pasrse
+import urllib.request
+
 import rospy
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
@@ -6,7 +12,19 @@ import cv2
 
 import discord
 from discord.ext import commands
+
+# define config value form config/config.json
+with open(os.path.dirname(os.path.abspath(__file__)) + '/../config.json') as j:
+        config = json.load(j)
+
+TOKEN_DISCORD = config['discord']['api_token']
+
+
 prefix = '!'
+
+
+
+
 
 client = discord.Client()
 
