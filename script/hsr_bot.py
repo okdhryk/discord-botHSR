@@ -14,7 +14,7 @@ import discord
 from discord.ext import commands
 
 # define config value form config/config.json
-with open(os.path.dirname(os.path.abspath(__file__)) + '/../config/config.json') as j:
+with open(os.path.dirname(os.path.abspath(__file__)) + '/../config/private.json') as j:
         config = json.load(j)
 
 TOKEN_DISCORD = config['discord']['api_token']
