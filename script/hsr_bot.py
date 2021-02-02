@@ -2,7 +2,7 @@
 import argparse
 import json
 import os
-import urllib.pasrse
+import urllib.parse
 import urllib.request
 
 import rospy
@@ -14,7 +14,7 @@ import discord
 from discord.ext import commands
 
 # define config value form config/config.json
-with open(os.path.dirname(os.path.abspath(__file__)) + '/../config.json') as j:
+with open(os.path.dirname(os.path.abspath(__file__)) + '/../config/config.json') as j:
         config = json.load(j)
 
 TOKEN_DISCORD = config['discord']['api_token']
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     try:
         bot = commands.Bot(command_prefix=prefix, help_command=JapaneseHelpCommand())
         bot.add_cog(Greet(bot=bot))
-        bot.run('ODA0OTE3NDQyMDQ0MTAwNjQ4.YBTTyA.H8EXQJVi9oJOqr3-iz4BUp1dDxc')
+        bot.run(TOKEN_DISCORD)
 
 #        client.run('ODA0OTE3NDQyMDQ0MTAwNjQ4.YBTTyA.H8EXQJVi9oJOqr3-iz4BUp1dDxc')
     #    start_node()
